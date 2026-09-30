@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage website</title>
+    <link rel="stylesheet" href="opmaak.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+
+    <div id="navDiv">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="algemeneGegevens.html">GEGEVENS</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="logboek.html">LOGBOEK</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+<div class="row">
+    <div class="col-3">
+        <h2>Contact</h2>
+        <img src="images/contacticon.png" alt="contact icoon" id="contactIcon">
+        <ul id="contactUl">
+            <li>
+                Lorem Ipsumstraat 00
+            </li>
+            <li>
+                0000 Lorem Ipsum Gemeente
+            </li>
+            <li>
+                Tel: +32 00 00 00 00
+            </li>
+            <li>
+                Email: info@lorem Ipsum.com
+            </li>
+        </ul>
+    </div>
+    <div class="col-9">
+            <main>
+                <section>
+                    <form>
+                        <fieldset>
+                            <legend>Basis Gegevens</legend>
+                            <label for="vNaam">Voornaam <b class="requiredstar">*</b></label>
+                            <input type="text" id="vNaam" name="vNaam" required>
+                            <label for="fNaam">Familienaam <b class="requiredstar">*</b></label>
+                            <input type="text" id="fNaam" name="fNaam" required>
+                            <label for="email">E-Mail <b class="requiredstar">*</b></label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="telefoonNummer">Telefoon Nummer</label>
+                            <input type="tel" id="telefoonNummer" name="telefoonNummer">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Woonplaats</legend>
+                            <label for="straatNaam">Straatnaam</label>
+                            <input type="text" id="straatNaam" name="straatNaam">
+                            <label for="postcode">Postcode <b class="requiredstar">*</b></label>
+                            <input type="number" id="postcode" name="postcode" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Bericht <b class="requiredstar">*</b></legend>
+                            <textarea name="bericht" id="bericht" required></textarea>
+                        </fieldset>
+                        <br><input type="submit" value="Verzenden">
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Heikki Pauwels</p>
+    </footer>
+</body>
+</html>
