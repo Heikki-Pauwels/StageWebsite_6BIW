@@ -191,7 +191,7 @@ footer {
   nav{
     background-color: #f8fafc;
   }
-  nav ul {
+  ul {
     flex-direction: column;
     list-style-type: none;
     margin: 0;
