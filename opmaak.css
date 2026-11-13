@@ -10,6 +10,25 @@ body {
   background-color: #f8fafc;
   color: #1e293b;
 }
+/* Volledig scherm overlay voor de GIF */
+#gifDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+/* Zorg dat de GIF zelf mooi past */
+#gifDiv img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 /* Opmaak van de hoofding */
 header {

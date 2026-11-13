@@ -13,5 +13,5 @@ document.addEventListener("submit", function (event) {
     const submitKnop = document.querySelector("input[type='submit']");
 
     // Zet de tekst op de knop
-        submitKnop.value = bevestigingsText;
+    submitKnop.value = bevestigingsText;
 });
