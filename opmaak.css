@@ -103,8 +103,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Afbeeldingen binnen col-4 */
-.col-4 img {
+/* Afbeeldingen binnen col-3 */
+.col-3 img {
   width: 100%;
   height: auto;
   display: block;
