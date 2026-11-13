@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage website</title>
+    <title>Contact  - Stage GZBK</title>
+    <!-- Koppeling naar het externe CSS-bestand -->
     <link rel="stylesheet" href="opmaak.css">
+    <script src="contact.js"></script>
 </head>
 
 <body>
+    <!-- Titelbalk van de pagina -->
     <header>
         <h1>Contact</h1>
     </header>
 
+    <!-- Navigatiemenu -->
     <div id="navDiv">
         <nav>
             <ul>
@@ -31,51 +35,68 @@
             </ul>
         </nav>
     </div>
-<div class="row">
-    <div class="col-3">
-        <h2>Contact</h2>
-        <img src="images/contacticon.png" alt="contact icoon" id="contactIcon">
-        <ul id="contactUl">
-            <li>
-                Langemarkstraat 8
-            </li>
-            <li>
-                8980 Zonnebeke
-            </li>
-            <li>
-                <a href="tel:+32 51 48 00 60">Tel: +32 51 48 00 60</a>
-            </li>
-            <li>
-                <a href="mailto:info@loremipsum.com">Email: info@zonnebeke.be</a>
-            </li>
-        </ul>
-    </div>
-    <div class="col-9">
+
+    <!-- Hoofdinhoud structuur met grid kolommen -->
+    <div class="row">
+        <!-- Linkerkolom: Contactgegevens van de organisatie -->
+        <div class="col-3">
+            <h2>Contact</h2>
+            <img src="images/contacticon.png" alt="Contacticoon" id="contactIcon">
+            <ul id="contactUl">
+                <li>
+                    Langemarkstraat 8
+                </li>
+                <li>
+                    8980 Zonnebeke
+                </li>
+                <li>
+                    <a href="tel:+3251480060">Tel: +32 51 48 00 60</a>
+                </li>
+                <li>
+                    <a href="mailto:info@zonnebeke.be">E-mail: info@zonnebeke.be</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Rechterkolom: Inhoud met het contactformulier -->
+        <div class="col-9">
             <main>
                 <section>
+                    <!-- Contactformulier -->
                     <form>
+                        <!-- Formuliersectie 1: Persoonlijke gegevens -->
                         <fieldset>
-                            <legend>Basis Gegevens</legend>
+                            <legend>Basisgegevens</legend>
                             <label for="vNaam">Voornaam <b class="requiredstar">*</b></label>
                             <input type="text" id="vNaam" name="vNaam" required>
+
                             <label for="fNaam">Familienaam <b class="requiredstar">*</b></label>
                             <input type="text" id="fNaam" name="fNaam" required>
-                            <label for="email">E-Mail <b class="requiredstar">*</b></label>
+
+                            <label for="email">E-mail <b class="requiredstar">*</b></label>
                             <input type="email" id="email" name="email" required>
-                            <label for="telefoonNummer">Telefoon Nummer</label>
+
+                            <label for="telefoonNummer">Telefoonnummer</label>
                             <input type="tel" id="telefoonNummer" name="telefoonNummer">
                         </fieldset>
+
+                        <!-- Formuliersectie 2: Adresgegevens -->
                         <fieldset>
                             <legend>Woonplaats</legend>
                             <label for="straatNaam">Straatnaam</label>
                             <input type="text" id="straatNaam" name="straatNaam">
+
                             <label for="postcode">Postcode <b class="requiredstar">*</b></label>
                             <input type="number" id="postcode" name="postcode" min="0" max="9999" required>
                         </fieldset>
+
+                        <!-- Formuliersectie 3: Het eigenlijke bericht -->
                         <fieldset>
                             <legend>Bericht <b class="requiredstar">*</b></legend>
                             <textarea name="bericht" id="bericht" required></textarea>
                         </fieldset>
+
+                        <!-- Verzendknop -->
                         <br><input type="submit" value="Verzenden">
                     </form>
                 </section>
@@ -83,6 +104,7 @@
         </div>
     </div>
 
+    <!-- Voettekst met copyright -->
     <footer>
         <p>&copy; Heikki Pauwels</p>
     </footer>

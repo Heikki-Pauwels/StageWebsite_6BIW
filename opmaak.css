@@ -1,14 +1,17 @@
+/* Algemene instellingen */
 * {
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+/* Stijlen voor de body, achtergrond en tekstkleur*/
 body {
   margin: 0;
   background-color: #f8fafc;
   color: #1e293b;
 }
 
+/* Opmaak van de hoofding */
 header {
   background-color: #0f172a;
   color: #ffffff;
@@ -16,7 +19,7 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-/* Grid layout rules */
+/* Grid layout regels 12 kolommen */
 .col-1 { width: 8.33%; }
 .col-2 { width: 16.66%; }
 .col-3 { width: 25%; }
@@ -30,14 +33,18 @@ header {
 .col-11 { width: 91.66%; }
 .col-12 { width: 100%; }
 
+/* Standaardinstellingen voor alle kolommen */
 [class*="col-"] {
   float: left;
   padding: 15px;
 }
 
+/* Achtergrondkleur van de navigatie-container */
 #navDiv{
   background-color:#2563eb ;
 }
+
+/* Navigatielijst  */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -46,12 +53,14 @@ nav ul {
   gap: 8px;
 }
 
+/* list items in de navigatie */
 nav li {
   padding: 10px 16px;
   border-radius: 8px;
   transition: background-color 0.2s ease;
 }
 
+/* Links binnen de navigatie zijn lijst elementen */
 nav li a {
   color: #ffffff;
   text-decoration: none;
@@ -59,19 +68,23 @@ nav li a {
   display: block;
 }
 
+/* Hover-effect wanneer je met de muis over een nav-item gaat */
 nav li:hover {
   background-color: #06226e;
 }
 
+/* Standaard opmaak voor hyperlinks */
 a {
   color: #2563eb;
   text-decoration: none;
 }
 
+/* Hover-effect voor hyperlinks */
 a:hover {
   text-decoration: underline;
 }
 
+/* Afbeeldingen binnen col-4 */
 .col-4 img {
   width: 100%;
   height: auto;
@@ -80,9 +93,12 @@ a:hover {
   object-fit: cover;
 }
 
+/* breedte voor het contacticoon */
 #contactIcon{
   width: 50%;
 }
+
+/* Algemene opmaak van formulieren */
 form {
   border-radius: 8px;
   background-color: #ffffff;
@@ -91,6 +107,7 @@ form {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
+/* Opmaak van formulierlabels */
 label {
   display: block;
   font-weight: 600;
@@ -98,6 +115,7 @@ label {
   margin-bottom: 4px;
 }
 
+/* Opmaak van inputs */
 input {
   width: 100%;
   height: 40px;
@@ -110,11 +128,13 @@ input {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Focus-effect voor inputs en textareas */
 input:focus, textarea:focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
+/* Specifieke opmaak voor de verzendknop */
 input[type=submit] {
   height: auto;
   background-color: #2563eb;
@@ -129,10 +149,12 @@ input[type=submit] {
   transition: background-color 0.2s ease;
 }
 
+/* Hover-effect voor de verzendknop */
 input[type=submit]:hover {
   background-color: #1d4ed8;
 }
 
+/* Opmaak voor input tekstvelden */
 textarea {
   height: 100px;
   width: 100%;
@@ -143,11 +165,12 @@ textarea {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Kleur van de verplichte sterretjes in formulieren */
 .requiredstar {
   color: #ef4444;
 }
 
-/* Tables */
+/* Tabellen opmaak */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -158,23 +181,26 @@ table {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
+/* Tabelcellen en koppen */
 th, td {
   border: 1px solid #e2e8f0;
   padding: 12px;
   text-align: left;
 }
 
+/* Tabelkoppen achtergrond en tekstkleur */
 th {
   background-color: #2563eb;
   color: #ffffff;
   font-weight: 600;
 }
 
+/* Zebra-strepen effect voor even rijen in tabellen */
 tr:nth-child(even) {
   background-color: #f8fafc;
 }
 
-/* Footer */
+/* Voettekst (footer) opmaak */
 footer {
   text-align: center;
   clear: both;
@@ -183,7 +209,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Mobile responsive view */
+/* GSM/tablet weergave  */
 @media only screen and (max-width: 750px) {
   [class*="col-"] {
     width: 100%;
@@ -209,5 +235,4 @@ footer {
   #contactIcon{
     width: 0px;
   }
-
 }
